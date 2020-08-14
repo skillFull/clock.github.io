@@ -13,9 +13,12 @@
 
             const watch = setInterval(() => {
                 const date = new Date();
-                const Miliseconds = date.getMilliseconds();
+                const Hours = date.getHours();
+                const Minutes = date.getMinutes();
                 const Seconds = date.getSeconds();
-                clock.innerHTML = `<div style="border: 2px solid red; width: ${Miliseconds}px; height: ${Miliseconds}px; margin-bottom: 20px; border-radius: 60%"></div>`
-            }, 500)
+                clock.innerHTML = `<div style="border: 2px solid red; width: ${Seconds}px; height: ${Seconds}px; border-radius: 60%"></div>
+                <div style="border: 2px solid gren; width: ${Minutes}px; height: ${Minutes}px; border-radius: 60%"></div>
+                <div style="border: 2px solid rose; width: ${Hours}px; height: ${Hours}px; border-radius: 60%"></div>`
+            }, 1000)
     </script>
 </html>
